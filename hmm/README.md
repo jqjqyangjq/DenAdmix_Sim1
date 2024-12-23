@@ -1,7 +1,7 @@
 # hmm_introgression
 This is to extend the original himmix model to low-coverage and damaged genomic data. I rewrote scripts so it's covenient to adapt to my project for low-coverage data.
 
-countfile can be modified from inputs from orignial version to get 5 columns: 
+countfile can be modified from inputs from orignial version to get 5 columns:\ 
 chr pos ancestral\_allele phase(0/1) num\_of\_derived\_alleles(>0)
 
 generate maskfile(.bed) from coverage file, including 3 columns:\
