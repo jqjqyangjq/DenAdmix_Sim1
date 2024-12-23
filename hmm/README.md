@@ -2,10 +2,10 @@
 This is to extend the original himmix model to low-coverage and damaged genomic data. I rewrote scripts so it's covenient to adapt to my project for low-coverage data.
 
 countfile can be modified from inputs from orignial version to get 5 columns: 
-**chr** **pos** **ancestral_****allele** **phase(0/1)** **num_****of_****derived_****alleles(>0)**
+chr pos ancestral\_allele phase(0/1) num\_of\_derived\_alleles(>0)
 
 generate maskfile(.bed) from coverage file, including 3 columns:
-**chr** **start_****coord** **end_****coord**
+chr start\_coord end\_coord
 
 usage: train and decode main.py gt\_mode -count\_file **countfile** -mut\_file **mutfile** -mask\_file **maskfile** -out **prefix** -data\_type modern -phased(if phase is not all 0)
 
