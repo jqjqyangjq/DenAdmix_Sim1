@@ -7,8 +7,8 @@ chr pos ancestral\_allele phase(0/1) num\_of\_derived\_alleles(>0)
 generate maskfile(.bed) from coverage file, including 3 columns:\
 chr start\_coord end\_coord
 
-usage: \train and decode: \main.py gt\_mode -count\_file **countfile** -mut\_file **mutfile** -mask\_file **maskfile** -out **prefix** -data\_type modern -phased(if phase is not all 0) \
-
+usage:\
+train and decode: \main.py gt\_mode -count\_file **countfile** -mut\_file **mutfile** -mask\_file **maskfile** -out **prefix** -data\_type modern -phased(if phase is not all 0)\
 annotate: \main.py anno -vcf **vcffile** -sample 3Neanerthals\_2Denisovans -group1 3Neanderthals -group2 2Denisovans -anno **prefix** -called **calledfile** -count\_file **countfile** -map\_file **recmap** -map Shared\_Map(or other map) -phased(if phase is not all 0) -strict(refin called file, from first matching pos to last matching pos)
 
 
